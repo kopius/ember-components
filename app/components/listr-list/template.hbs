@@ -1,0 +1,8 @@
+<div>
+  <h4 class='list-header' {{action 'toggleListDetail'}}>Title: {{list.title}}</h4>
+  <ul>
+    {{#each list.items as |item|}}
+      {{listr-list/item item=item}}
+    {{/each}}
+  </ul>
+</div>
